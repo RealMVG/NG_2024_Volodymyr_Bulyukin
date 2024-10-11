@@ -6,25 +6,24 @@ int main (){
     double a, b;
     char operation;
 
-    cout << "Calculator" << endl;
+    cout << "Calculator :3" << endl;
 
-    cout << "Type first number:";
-        cin >> a;
-    cout << "Type second number:";
-        cin >> b;
-    cout << "Type what you want to do (+, -, *, /)";
-        cin >> operation;
+    cout << "Write what u want to do in format like: 1+1;\nSupported chars (+, -, *, /)" << endl;
+    cin >> a; cin >> operation; cin >> b;
 
     switch(operation){
         case '+':
             cout << "Result: " << (a+b) << endl;
+            break;
         case '-':
             cout << "Result: " << (a-b) << endl;
+            break;
         case '*':
-            cout << "Result: " << (a*b) << endl;
+           cout << "Result: " << (a*b) << endl;
+            break;
         case '/':
-            cout << "Result: " << (a/b) << endl;
-        default:
-            cout << "ya tvoi znaki ne ponimat'";
+           cout << "Result: " << (a/b) << endl;
+            break;
     }
+        return 0;
 }
