@@ -4,4 +4,4 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-    Lesson_1/Task_4/Task_4.cpp
+    Lesson_1/Task_5/Task_5.cpp
