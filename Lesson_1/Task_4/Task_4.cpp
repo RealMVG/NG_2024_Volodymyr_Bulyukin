@@ -4,13 +4,10 @@ using namespace std;
 
 int main (){
 
-    int salary;
+    int salary; int salaryCategory = 0;
 
     cout << "Write your salary, sir:" << endl;
     cin >> salary;
-
-    int salaryCategory = 0;
-
 
     if (salary < 999) {
         salaryCategory = 1;

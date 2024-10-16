@@ -23,7 +23,7 @@ int main (){
     case '/':
         result = a / b;
         break;
-    default:
+    default: // is this is capipasta, sir?
         correct = false;
         cout << "wrong symbol" << endl;
         break;
