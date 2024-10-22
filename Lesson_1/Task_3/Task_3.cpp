@@ -3,32 +3,31 @@
 using namespace std;
 
 int main (){
-    double a, b; char operation; int result; bool correct = true;
+    double FirstN, SecondN; char operation; int result;
 
     cout << "Calculator :3" << endl;
 
     cout << "Write what u want to do in format like: 1+1;\nSupported chars (+, -, *, /)" << endl;
-    cin >> a >> operation >> b;
+    cin >> FirstN >> operation >> SecondN;
 
     switch(operation){
     case '+':
-        result = a + b;
+        result = FirstN + SecondN;
         break;
     case '-':
-        result = a - b;
+        result = FirstN - SecondN;
         break;
     case '*':
-        result = a * b;
+        result = FirstN * SecondN;
         break;
     case '/':
-        result = a / b;
+        result = FirstN / SecondN;
         break;
     default: // is this is capipasta, sir?
-        correct = false;
         cout << "wrong symbol" << endl;
         break;
     }
-    if (correct == true){
+    if (operation == '+' || '-' || '*' || '/'){
         cout << result << endl;
     }
 }
