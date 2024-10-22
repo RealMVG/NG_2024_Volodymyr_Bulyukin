@@ -12,14 +12,15 @@ int main (){
     if (salary < 999) {
         salaryCategory = 1;
     }
-    if (salary > 999) {
+    else if (salary > 999) {
         if (salary < 999999) {
             salaryCategory = 2;
         }
     }
-    if (salary > 999999) {
+    else if (salary > 999999) {
         salaryCategory = 3;
     }
+
 
     switch (salaryCategory) {
     case 1:
