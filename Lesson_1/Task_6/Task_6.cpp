@@ -18,8 +18,8 @@ int main() {
                 do
                     switch(anim) {
                     case 1:
-                        for (int i = 0; i < height; i++) {
-                            for (int j = 0; j < i + 1; j++) {
+                        for (int row = 0; row < height; row++) {
+                            for (int j = 0; j < row + 1; j++) {
                                 cout << "*";
                             }
 
@@ -27,8 +27,8 @@ int main() {
                         }
                         Sleep(sleep); system("cls");
                     case 2:
-                        for (int i = height; i > 0; i--) {
-                            for (int j = 0; j < i; j++) {
+                        for (int row = height; row > 0; row--) {
+                            for (int j = 0; j < row; j++) {
                                 cout << "*";
                             }
 
@@ -36,13 +36,13 @@ int main() {
                         }
                         Sleep(sleep); system("cls");
                     case 3:
-                        for (int i = height; i > 0; i--) {
+                        for (int row = height; row > 0; row--) {
 
-                            for (int j = 0; j < height - i; j++) {
+                            for (int j = 0; j < height - row; j++) {
                                 cout << ' ';
                             }
 
-                            for (int j = 0; j < i; j++) {
+                            for (int j = 0; j < row; j++) {
                                 cout << "*";
                             }
 
@@ -50,13 +50,13 @@ int main() {
                         }
                         Sleep(sleep); system("cls");
                     case 4:
-                        for (int i = 0; i < height; i++) {
+                        for (int Row = 0; Row < height; Row++) {
 
-                            for (int j = 0; j < height - i - 1; j++) {
+                            for (int CharInRow = 0; CharInRow < height - Row - 1; CharInRow++) {
                                 cout << ' ';
                             }
 
-                            for (int j = 0; j < 1 * i + 1; j++) {
+                            for (int StarsInRow = 0; StarsInRow < 1 * Row + 1; StarsInRow++) {
                                 cout << "*";
                             }
 

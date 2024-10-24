@@ -15,8 +15,8 @@ int Animation(){
                 do
                     switch(anim) {
                     case 1:
-                        for (int i = 0; i < height; i++) {
-                            for (int j = 0; j < i + 1; j++) {
+                        for (int Row = 0; Row < height; Row++) {
+                            for (int CharInRow = 0; CharInRow < Row + 1; CharInRow++) {
                                 cout << "*";
                             }
 
@@ -24,8 +24,8 @@ int Animation(){
                         }
                         Sleep(sleep); system("cls");
                     case 2:
-                        for (int i = height; i > 0; i--) {
-                            for (int j = 0; j < i; j++) {
+                        for (int Row = height; Row > 0; Row--) {
+                            for (int CharInRow = 0; CharInRow < Row; CharInRow++) {
                                 cout << "*";
                             }
 
@@ -33,13 +33,13 @@ int Animation(){
                         }
                         Sleep(sleep); system("cls");
                     case 3:
-                        for (int i = height; i > 0; i--) {
+                        for (int Row = height; Row > 0; Row--) {
 
-                            for (int j = 0; j < height - i; j++) {
+                            for (int CharInRow = 0; CharInRow < height - Row; CharInRow++) {
                                 cout << ' ';
                             }
 
-                            for (int j = 0; j < i; j++) {
+                            for (int CharInRow = 0; CharInRow < Row; CharInRow++) {
                                 cout << "*";
                             }
 
@@ -47,13 +47,13 @@ int Animation(){
                         }
                         Sleep(sleep); system("cls");
                     case 4:
-                        for (int i = 0; i < height; i++) {
+                        for (int Row = 0; Row < height; Row++) {
 
-                            for (int j = 0; j < height - i - 1; j++) {
+                            for (int CharInRow = 0; CharInRow < height - Row - 1; CharInRow++) {
                                 cout << ' ';
                             }
 
-                            for (int j = 0; j < 1 * i + 1; j++) {
+                            for (int CharInRow = 0; CharInRow < 1 * Row + 1; CharInRow++) {
                                 cout << "*";
                             }
 
