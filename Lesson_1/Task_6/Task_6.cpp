@@ -18,8 +18,8 @@ int main() {
                 do
                     switch(anim) {
                     case 1:
-                        for (int row = 0; row < height; row++) {
-                            for (int j = 0; j < row + 1; j++) {
+                        for (int Row = 0; Row < height; Row++) {
+                            for (int CharInRow = 0; CharInRow < Row + 1; CharInRow++) {
                                 cout << "*";
                             }
 
@@ -27,8 +27,8 @@ int main() {
                         }
                         Sleep(sleep); system("cls");
                     case 2:
-                        for (int row = height; row > 0; row--) {
-                            for (int j = 0; j < row; j++) {
+                        for (int Row = height; Row > 0; Row--) {
+                            for (int CharInRow = 0; CharInRow < Row; CharInRow++) {
                                 cout << "*";
                             }
 
@@ -36,13 +36,13 @@ int main() {
                         }
                         Sleep(sleep); system("cls");
                     case 3:
-                        for (int row = height; row > 0; row--) {
+                        for (int Row = height; Row > 0; Row--) {
 
-                            for (int j = 0; j < height - row; j++) {
+                            for (int CharInRow = 0; CharInRow < height - Row; CharInRow++) {
                                 cout << ' ';
                             }
 
-                            for (int j = 0; j < row; j++) {
+                            for (int CharInRow = 0; CharInRow < Row; CharInRow++) {
                                 cout << "*";
                             }
 
