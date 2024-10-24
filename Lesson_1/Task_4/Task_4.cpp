@@ -1,8 +1,9 @@
 #include <iostream>
-
+#include <windows.h>
 using namespace std;
 
 int main (){
+    SetConsoleOutputCP(CP_UTF8);
 
     int salary; int salaryCategory = 0;
 
@@ -12,13 +13,13 @@ int main (){
     if (salary < 999) {
         salaryCategory = 1;
     }
-    else if (salary > 999) {
-        if (salary < 999999) {
+    if (salary > 999) {
+        if (salary < 999999){
             salaryCategory = 2;
         }
-    }
-    else if (salary > 999999) {
-        salaryCategory = 3;
+        if (salary > 999999) {
+            salaryCategory = 3;
+        }
     }
 
 
@@ -33,4 +34,5 @@ int main (){
         cout << "OMG! U Millionare!" << endl;
         break;
     }
+
 }
