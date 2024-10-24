@@ -8,15 +8,15 @@ int main(){
 
     const int SIZE = 5; int number[SIZE];int max_value = 0;
 
-    for (int i = 0; i < SIZE; i++){
-        cout << "Imput number " << i + 1 << ": "; cin >> number[i];
-        if (number[i] > max_value){
-            max_value = number[i];
+    for (int count = 0; count < SIZE; count++){
+        cout << "Imput number " << count + 1 << ": "; cin >> number[i];
+        if (number[count] > max_value){
+            max_value = number[count];
         }
     }
-    for (int i = 1; i <= max_value; i++) {
-        for (int j = 0; j < SIZE; j++) {
-            if (number[j] >= i) {
+    for (int count = 1; count <= max_value; count++) {
+        for (int index = 0; index < SIZE; index++) {
+            if (number[index] >= count) {
                 cout << "* ";
             } else {
                 cout << "  ";
