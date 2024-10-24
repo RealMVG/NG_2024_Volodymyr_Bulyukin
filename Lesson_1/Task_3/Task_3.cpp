@@ -3,7 +3,7 @@
 using namespace std;
 
 int main (){
-    double FirstN, SecondN; char operation; int result;
+    double FirstN, SecondN; char operation; int result = 0;
 
     cout << "Calculator :3" << endl;
 
