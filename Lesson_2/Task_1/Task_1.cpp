@@ -7,10 +7,10 @@ int main(){
 
     const int SIZE = 5;
     int number[SIZE];
-    for (int i = 0; i<SIZE; i++){
-        cout << "Imput number " << i + 1 << ": "; cin >> number[i];
+    for (int count = 0; count<SIZE; count++){
+        cout << "Imput number " << count + 1 << ": "; cin >> number[count];
     }
-    for (int i = 0; i < SIZE; i++){
-        cout << "That's your " << i + 1 << " number: " << number[i] << endl;
+    for (int count = 0; count < SIZE; count++){
+        cout << "That's your " << count + 1 << " number: " << number[count] << endl;
     }
 }
