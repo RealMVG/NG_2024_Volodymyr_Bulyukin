@@ -31,3 +31,5 @@ int main() {
         cout << "No, no, no. Without sighted numbers, pls!" << endl;
     }
 }
+
+

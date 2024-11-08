@@ -6,10 +6,10 @@ using namespace std;
 int main(){
     SetConsoleOutputCP(CP_UTF8);
 
-    const int SIZE = 5; int number[SIZE];int max_value = 0;
+    const int SIZE = 5; int number[SIZE]; int max_value = 0;
 
     for (int count = 0; count < SIZE; count++){
-        cout << "Imput number " << count + 1 << ": "; cin >> number[i];
+        cout << "Imput number " << count + 1 << ": "; cin >> number[count];
         if (number[count] > max_value){
             max_value = number[count];
         }

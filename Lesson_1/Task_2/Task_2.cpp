@@ -1,7 +1,9 @@
 #include <iostream>
+#include <windows.h>
 
 using namespace std;
-
 int main(){
-    cout << "Volodymyr\nBulyukin" << endl;
+    SetConsoleOutputCP(CP_UTF8);
+    cout << "Volodymyr" << endl
+         << "Bulyukin" << endl;
 }
