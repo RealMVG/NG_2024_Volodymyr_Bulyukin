@@ -8,9 +8,11 @@ int main(){
     const int SIZE = 5;
     int number[SIZE];
     for (int count = 0; count<SIZE; count++){
-        cout << "Imput number " << count + 1 << ": "; cin >> number[count];
+        cout << "Input number " << count + 1 << ": "; cin >> number[count];
     }
+    cout << "That's your numbers: "<< endl;
     for (int count = 0; count < SIZE; count++){
-        cout << "That's your " << count + 1 << " number: " << number[count] << endl;
+        cout << number[count];
+        if (count < SIZE - 1) { cout << ", ";} else {cout << "." << endl;}
     }
 }
