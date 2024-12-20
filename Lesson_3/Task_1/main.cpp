@@ -10,7 +10,6 @@ void PrintSpaces(int spaces) {
     }
 }
 
-
 void PrintStars(int stars) {
     if (stars > 0) {
         cout << '*';

@@ -7,10 +7,11 @@ using namespace std;
 int main() {
     SetConsoleOutputCP(CP_UTF8);
 
-    int word_count = 0;
-    bool in_word = false;
     string input = "234Hello&*&#world#$%a";
     cout << "Input line: " << input << endl;
+
+    int word_count = 0;
+    bool in_word = false;
 
     for (char ch : input) {
         if (isalpha(ch)) { // if this line will be "if(isalpha(ch) && !inword)"

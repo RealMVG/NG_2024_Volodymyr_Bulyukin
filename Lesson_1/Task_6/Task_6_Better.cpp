@@ -4,8 +4,11 @@
 using namespace std;
 int Animation(){
     short height, anim = 1, sleep, Lstart = 0, Lcount;
+    string sheight;
 
-    cout << "Tringle Animator\nType Tringle height: ", cin >> height;
+    cout << "Tringle Animator\nType Tringle height: ", cin >> sheight;
+    height = stoi(sheight);
+
     if (height > 0) {
         cout << "Type Speed of animation (ms): ", cin >> sleep;
         if (sleep > 0){
